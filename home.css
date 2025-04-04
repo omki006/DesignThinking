@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Taskbar */
+.taskbar {
+    background-color: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+
+.taskbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.taskbar ul li {
+    display: inline;
+}
+
+.taskbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.taskbar ul li a:hover {
+    background-color: #34495e;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Header */
+header {
+    background-color: #27ae60;
+    color: white;
+    padding: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Info Box */
+.info-box {
+    background-color: white;
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+/* Features List */
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.features-list li {
+    background: white;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Dashboard Button */
+.dashboard-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 30px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.dashboard-btn:hover {
+    background-color: #1f618d;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+/* Cloud Box for Welcome Message */
+.welcome-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c5f2d;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Cloud Box for "Why Intelli-Bin?" */
+.cloud-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px auto;
+    width: 70%;
+}
+
+/* Mild Green Rain Effect */
+@keyframes rain {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100px 100px;
+    }
+}
+
+.rain-effect {
+    background: radial-gradient(rgba(0, 128, 0, 0.3) 2px, transparent 4px);
+    background-size: 20px 20px;
+    animation: rain 8s linear infinite;
+}
+/* Hover effect for the features list */
+.features-list li {
+    list-style: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Default background color */
+.features-list li {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Hover effect */
+.features-list li:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    color: #333;
+}
+
+/* Icons styling */
+.features-list li i {
+    font-size: 20px;
+    color: #ffcc00;
+}
+

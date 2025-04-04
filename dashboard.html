@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Intelli-Bin</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script defer src="dashboard.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="rain-effect">
+
+  <!-- Navigation Bar -->
+  <nav class="taskbar">
+    <ul>
+      <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="dashboard.html" class="active"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
+      <li><button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Intelli-Bin Dashboard</h1>
+  </header>
+
+  <div class="welcome-box">
+    <h2>Welcome, <span id="user-name">User</span></h2>
+    <p>📊 Monitor waste levels, optimize disposal, and track bins in real-time.</p>
+  </div>
+
+  <!-- Dashboard Overview -->
+  <h2 class="section-heading">Dashboard Overview</h2>
+  <div class="dashboard-overview">
+    <div class="overview-box">
+      <h3><i class="fas fa-dumpster"></i> Total Waste Collected</h3>
+      <p><span id="total-waste">2450</span> kg</p>
+    </div>
+    <div class="overview-box">
+      <h3><i class="fas fa-recycle"></i> Recycling Rate</h3>
+      <p><span id="recycle-rate">67</span>%</p>
+    </div>
+    <div class="overview-box">
+      <h3><i class="fas fa-exclamation-triangle"></i> Smart Alerts</h3>
+      <p id="alerts">3 Alerts</p>
+    </div>
+    <div class="overview-box">
+      <h3><i class="fas fa-trash"></i> Total Bins Monitored</h3>
+      <p><span id="bin-count">12</span> bins</p>
+    </div>
+  </div>
+
+  <!-- Bin Status -->
+  <h2 class="section-heading">Bin Status</h2>
+  <div class="dashboard-widgets">
+    <div class="widget">
+        <h3><i class="fas fa-dumpster"></i> Bin 1</h3>
+        <img src="bin1.jpg" alt="Bin 1" class="bin-img">
+        <p>Fill: <span class="fill-percentage">80%</span></p>
+        <p>Last Emptied: <span class="last-emptied">14 hours ago</span></p>
+        <span class="status full">Full</span>
+    </div>
+    <div class="widget">
+        <h3><i class="fas fa-dumpster"></i> Bin 2</h3>
+        <img src="bin2.jpg" alt="Bin 2" class="bin-img">
+        <p>Fill: <span class="fill-percentage">3%</span></p>
+        <p>Last Emptied: <span class="last-emptied">10 hours ago</span></p>
+        <span class="status half-full">Half Full</span>
+    </div>
+    <div class="widget">
+        <h3><i class="fas fa-dumpster"></i> Bin 3</h3>
+        <img src="bin3.jpg" alt="Bin 3" class="bin-img">
+        <p>Fill: <span class="fill-percentage">20%</span></p>
+        <p>Last Emptied: <span class="last-emptied">6 hours ago</span></p>
+        <span class="status empty">Empty</span>
+    </div>
+    <div class="widget">
+        <h3><i class="fas fa-dumpster"></i> Bin 4</h3>
+        <img src="bin4.jpg" alt="Bin 4" class="bin-img">
+        <p>Fill: <span class="fill-percentage">95%</span></p>
+        <p>Last Emptied: <span class="last-emptied">20 hours ago</span></p>
+        <span class="status full">Full</span>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Intelli-Bin. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

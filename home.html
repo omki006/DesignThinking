@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Intelli-Bin</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="rain-effect"> 
+
+    <!-- Taskbar -->
+    <nav class="taskbar">
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="dashboard.html"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+            <li><button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button></li>
+        </ul>
+    </nav>
+
+    <div class="welcome-box">
+        <h1>Welcome to Intelli-Bin</h1>
+    </div>
+
+    <section class="home-content">
+        <div class="info-box">
+            <p>♻️ Intelli-Bin is a smart waste management system leveraging AI and IoT to enhance waste disposal efficiency.</p>
+        </div>
+        <div class="cloud-box">
+            <h2 class="section-heading">Why Intelli-Bin?</h2>
+            <ul class="features-list">
+                <li><i class="fas fa-robot"></i> AI-powered waste detection</li>
+                <li><i class="fas fa-wifi"></i> IoT-enabled bin status tracking</li>
+                <li><i class="fas fa-map-marker-alt"></i> Real-time location monitoring</li>
+                <li><i class="fas fa-seedling"></i> Sustainable and eco-friendly</li>
+            </ul>
+        </div>
+        <a href="dashboard.html" class="dashboard-btn"><i class="fas fa-chart-bar"></i> View Dashboard</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Intelli-Bin. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Three.js Script for Tesseract -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="tesseract.js"></script>
+
+</body>
+</html>

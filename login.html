@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Intelli-Bin</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="login.js"></script>
+</head>
+<body class="login-page">
+  <div class="ring">
+    <i style="--clr:#ff6f61;"></i>
+    <i style="--clr:#ffdab9;"></i>
+    <i style="--clr:#ffffff;"></i>
+    
+    <div class="login">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="inputBx">
+          <input type="text" id="email" placeholder="Email" required>
+        </div>
+        <div class="inputBx">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <p id="error-message" class="hidden">Invalid email or password</p>
+        <div class="inputBx">
+          <button type="submit" id="login-btn">Sign in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
