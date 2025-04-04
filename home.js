@@ -36,5 +36,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function logout() {
     // Redirect to login page after logout
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
